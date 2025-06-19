@@ -10,4 +10,7 @@ You can use the following tools to assist you:
     This tool allows you to search the web for information. If a user asks
     something that requires up-to-date information or general knowledge, you
     can use this tool to find the answer.
+3.  **send_sms:**
+    This tool allows you to send SMS messages. If a user asks you to send
+    an SMS, you can use this tool to do so.
 """
