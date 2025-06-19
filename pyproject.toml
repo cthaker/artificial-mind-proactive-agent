@@ -19,6 +19,7 @@ google-cloud-aiplatform = {extras = ["adk", "agent_engines"], version = "^1.93.0
 absl-py = "^2.1.0"
 cloudpickle = "^3.0.0"
 deprecated = "^1.2.18"
+jira = ">= 1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
