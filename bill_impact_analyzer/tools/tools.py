@@ -5,6 +5,14 @@ from pydantic import BaseModel, Field
 from google.adk.tools.tool_context import ToolContext
 import json
 
+from twilio.rest import Client
+
+account_sid = 'ACce58d36458dd385cdc2dd739a984d0c4'
+auth_token = '3d943ceb3a2087894f643858cd5138a5'
+twilio_number = '+18483613765'
+recipient_number = '+12269617507'
+client = Client(account_sid, auth_token)
+
 # Schemas
 class BillEvent(BaseModel):
     accountId: str 
@@ -182,3 +190,18 @@ def get_bill_export_in_user_freiendly_format(
         f"Balance Due: {bill_export.balanceDue}\n"
         f"Sections:\n" + "\n".join(sections)
     )
+
+def send_sms(message_body: str) -> dict:
+    """
+    Placeholder function to send SMS.
+    This function can be implemented to send SMS messages.
+    :param recipient_number: The phone number to send the SMS to.
+    :param message_body: The body of the SMS message.
+    :return: A dictionary containing the message instance.
+    """
+    message = client.messages.create(
+        body=message_body,
+        from_=twilio_number,
+        to=recipient_number
+        )
+    return {"message_instance": message.sid} 

@@ -24,6 +24,7 @@ BILL_PREDICTOR_PROMPT = """
         - Ensure that the section and sub-section names are consistent with the last bill export.
     - If the prediction is successful, 
         - show the predicted next bill to the user.
-        - Also generate and show a one-liner summary mentioning the events and the predicted next bill amount.
+        - Also generate and show a customer-friendly one-liner summary mentioning the events and the predicted next bill amount.
+        - Send an SMS to the user with the one-liner summary using the `send_sms` tool.
     - If the prediction is not possible due to insufficient data, inform the user.
 """
