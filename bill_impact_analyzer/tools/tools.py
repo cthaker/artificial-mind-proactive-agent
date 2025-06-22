@@ -6,16 +6,23 @@ from google.adk.tools.tool_context import ToolContext
 import json
 
 from twilio.rest import Client
+from google.cloud import bigquery
 
+# Twilio configuration
 account_sid = 'ACce58d36458dd385cdc2dd739a984d0c4'
 auth_token = '3d943ceb3a2087894f643858cd5138a5'
 twilio_number = '+18483613765'
 recipient_number = '+12269617507'
 client = Client(account_sid, auth_token)
 
+# BigQuery configuration
+PROJECT_ID = "hacker2025-team-1-dev"
+DATASET_ID = "BillingData"
+TABLE_ID = "BillingStatement"
+
 # Schemas
 class BillEvent(BaseModel):
-    accountId: str 
+    accountId: int 
     eventName: str
     eventDescription: Optional[str] 
     eventDate: str # ISO 8601 format (e.g., "2023-10-01")
@@ -32,7 +39,7 @@ class BillEvent(BaseModel):
 
 class BillSubSection(BaseModel):
     sectionName: str
-    sectionDescription: Optional[str]
+#    sectionDescription: Optional[str]s
     sectionAmount: float = 0.0
 
 class BillSection(BaseModel):
@@ -44,7 +51,7 @@ class BillSection(BaseModel):
     )
 
 class BillExport(BaseModel):
-    accountId: str
+    accountId: int
     billDate: str # ISO 8601 format (e.g., "2023-10-01")
     balanceDue: float = 0.0
     billSections: List[BillSection] = Field(
@@ -76,8 +83,7 @@ def save_bill_events_to_state(
     # A best practice for tools is to return a status message in a return dict
     return {"status": "success"}
 
-
-def bill_export(
+def get_bill_export(
     tool_context: ToolContext,
     accountId: str
 ) -> dict[str, str]:
@@ -90,6 +96,20 @@ def bill_export(
     Returns:
         dict[str, str]: A status message indicating success or failure.
     """
+
+    bill_history = fetch_bill_history(accountId=accountId)
+    tool_context.state["bill_history"] = bill_history
+
+    if bill_history:
+        print(f"Bill History for {accountId}:")
+        for row in bill_history:
+            print(bill_history[0])  
+    else:
+        print(f"No bill history found for {accountId}.")
+
+    # Convert dictionary to JSON string
+    json_string = json.dumps(bill_history[0], indent=4, default=str)
+    print(f"JSON String: {json_string}")
 
     json_data = """
     {
@@ -150,10 +170,8 @@ def bill_export(
     """
 
     try:
-        bill_export = BillExport.model_validate_json(json_data)
+        bill_export = BillExport.model_validate_json(json_string)  
         # Save the bill export to the state
-        if bill_export.accountId != accountId:
-            raise ValueError(f"Bill Export Not found for Account ID {accountId}")
         tool_context.state["bill_export"] = bill_export
     except Exception as e:
         print(f"Error: {e}")
@@ -163,7 +181,35 @@ def bill_export(
  
 # Note: The above function is a mock implementation. In a real-world scenario, you would fetch the bill export from a database or an API.
 
-def get_bill_export_in_user_freiendly_format(
+def fetch_bill_history(
+    accountId: str,
+) -> list[dict]:
+    """Fetches the billing history for a given account ID.
+
+    Args:
+        accountId (str): The account ID for which to fetch the billing history.
+
+    Returns:
+        list[dict]: A list of dictionaries, where each dictionary represents a row from the BillingStatement table.
+                     Returns an empty list if no data is found or if an error occurs.
+    """
+    try:
+        client = bigquery.Client(project=PROJECT_ID)
+        query = f"""
+            SELECT *
+            FROM `{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}`
+            WHERE accountId = {accountId}
+            ORDER BY billDate DESC LIMIT 1
+        """
+        query_job = client.query(query)
+        results = query_job.result()
+        
+        return [dict(row) for row in results]
+    except Exception as e:
+        print(f"Error fetching billing history for accountId {accountId}: {e}")
+        return []  # Return an empty list if an error occurs or no data is found
+
+def convert_bill_export_in_user_freiendly_format(
     tool_context : ToolContext,
 ) -> str:
     """Formats the BillExport object saved in state into a user-friendly string.

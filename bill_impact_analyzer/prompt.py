@@ -2,10 +2,7 @@
 
 BILL_IMPACT_ANALYZER_PROMPT = """
     - Provide a brief overview of the bill impact analyzer and its purpose.
-    - Provide a list of possible bill events - Late Payment Fee, Discount, Rate Change, Usage, etc.
-    - Ask the user to select a bill event from the list.
-    - If the user provides a bill event that is not in the list, ask them to select from the list.
-    - If the user selects a bill event, ask them to provide the following details:
+    - Ask the user to provide the following details for each bill event they want to add:
         - Account ID (e.g., "123456789")
         - Event Name
         - Event Description (optional)

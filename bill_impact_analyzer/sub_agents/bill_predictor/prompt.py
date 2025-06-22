@@ -2,9 +2,9 @@
 
 BILL_PREDICTOR_PROMPT = """
     - Inform the user that you will predict the next bill based on the saved bill events and the last bill.    
-    - Load the last bill using the `bill_export` tool passing the accountId of the saved bill event.
+    - Load the last bill using the `get_bill_export` tool passing the accountId of the saved bill event.
         - If the last bill is not available, inform the user that last bill is not available currently and prediction cannot be made.
-        - If the last bill is available, show the accountId, billDate, balanceDue, and billSections using the 'get_bill_export_in_user_freiendly_format' tool.
+        - If the last bill is available, show the accountId, billDate, balanceDue, and billSections using the 'convert_bill_export_in_user_freiendly_format' tool.
     - If the last bill export is available, 
         - Load the saved bill events from the state and analyze the saved bill events
     - For each saved bill event:
