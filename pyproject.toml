@@ -1,5 +1,5 @@
 [project]
-name = "telecom_agent_main"
+name = "agent-main"
 version = "0.1.0"
 description = "This AI Agent helps user with their telecom billing, also it suggests plans according to user's requirement."
 authors = [
@@ -20,6 +20,7 @@ absl-py = "^2.1.0"
 cloudpickle = "^3.0.0"
 deprecated = "^1.2.18"
 jira = ">= 1.0.0"
+twilio = "^9.5.2"
 
 [build-system]
 requires = ["poetry-core"]
