@@ -41,5 +41,7 @@
 13. adk web
 # BigQuery  Information
   > Service Account "dbconnect" have been created for connection
+
   > Created New DataSet "BillingData" and table "BillingStatement"
+
   > Data imported in "BillingStatement" 
