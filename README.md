@@ -32,7 +32,14 @@
 6. .\.venv\Scripts\activate
  for MAC-> source $(poetry env info --path)/bin/activate
 7. pip3 install google-adk
+8. pip3 install twilio
+9. pip3 install jira
+10. pip3 install --upgrade google-cloud-bigquery
 # To be executed on google cloud cli
-8. gcloud auth application-default login (update values in .env)
-9. gcloud init (Select project-id)
-11. adk web 
+11. gcloud auth application-default login (update values in .env)
+12. gcloud init (Select project-id)
+13. adk web
+# BigQuery  Information
+  > Service Account "dbconnect" have been created for connection
+  > Created New DataSet "BillingData" and table "BillingStatement"
+  > Data imported in "BillingStatement" 
