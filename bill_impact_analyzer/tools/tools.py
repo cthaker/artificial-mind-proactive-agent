@@ -39,7 +39,7 @@ class BillEvent(BaseModel):
 
 class BillSubSection(BaseModel):
     sectionName: str
-#    sectionDescription: Optional[str]s
+    sectionDescription: Optional[str]
     sectionAmount: float = 0.0
 
 class BillSection(BaseModel):
@@ -110,64 +110,6 @@ def get_bill_export(
     # Convert dictionary to JSON string
     json_string = json.dumps(bill_history[0], indent=4, default=str)
     print(f"JSON String: {json_string}")
-
-    json_data = """
-    {
-        "accountId": "37715101",
-        "billDate": "2025-05-20",
-        "balanceDue": 135.00,
-        "billSections": [
-            {
-                "sectionName": "Monthly Services",
-                "sectionAmount": 90.00,
-                "subSections": [
-                    {
-                        "sectionName": "Internet",
-                        "sectionDescription": "High-speed internet service",
-                        "sectionAmount": 40.00
-                    },
-                    {
-                        "sectionName": "TV",
-                        "sectionDescription": "Premium Cable TV",
-                        "sectionAmount": 30.00
-                    },
-                    {
-                        "sectionName": "Telephone",
-                        "sectionDescription": "Home phone service",
-                        "sectionAmount": 20.00
-                    }				
-                ]
-            },
-            {
-                "sectionName": "One Time Charges or Credits",
-                "sectionAmount": 25.00,
-                "subSections": [
-                    {
-                        "sectionName": "Late Payment Fee",
-                        "sectionDescription": "Late payment fee for the previous month",
-                        "sectionAmount": 25.00
-                    }			
-                ]
-            },
-            {
-                "sectionName": "Taxes and Fees",
-                "sectionAmount": 20.00,
-                "subSections": [
-                    {
-                        "sectionName": "Federal Tax",
-                        "sectionDescription": "Federal tax on services",
-                        "sectionAmount": 10.00
-                    },
-                    {
-                        "sectionName": "State Tax",
-                        "sectionDescription": "State tax on services",
-                        "sectionAmount": 10.00
-                    }                    			
-                ]
-            }            		
-        ]
-    }
-    """
 
     try:
         bill_export = BillExport.model_validate_json(json_string)  
