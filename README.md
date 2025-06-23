@@ -41,6 +41,9 @@ Run adk web to launch ADK Dev UI
 
 # BigQuery  Information
   > Service Account: "dbconnect"
+ 
   > DataSet: "BillingData"
+
   > Table: "BillingStatement"
+  
   > Data imported in "BillingStatement" 
