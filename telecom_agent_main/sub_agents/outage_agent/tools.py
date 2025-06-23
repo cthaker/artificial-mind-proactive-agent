@@ -63,7 +63,8 @@ def read_all_tickets()-> dict:
             "id": issue.id,
             "key": issue.key,
             "summary": issue.fields.summary,
-            "description": issue.fields.description
+            "description": issue.fields.description,
+            "status": str(issue.fields.status)
         }
         tickets.append(dict)
     return {"tickets": tickets}
