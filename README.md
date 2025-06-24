@@ -58,8 +58,11 @@ It's key features include:
 ![ProactiveReachOutAgents-Agent_Design](https://github.com/user-attachments/assets/f1da0f92-397f-4291-b780-68c87bdc4c51)
 To support SmartReach’s diverse feature set, the solution deploys three dedicated agent groups, each focused on a specific functional domain. 
 
-* **Service Outage/Restoration**
-
+* **Service Outage/Restoration** - Service Outage/Restoration agents handle service disruption events, performs a predictive analysis based on historical outage tickets and provides an initial resolution framework to support engineers.
+  * When an outage event occurs, the event handler/subscriber triggers the outage_event_analyzer agent. This agent consumes the outage event and transfers the flow to the outage_agent.
+  * The outage_agent reads historical tickets from Jira and attempts to match the current outage with any prior incident. If a match is found, it creates a new incident ticket in Jira indicating resolution steps similar to the previous one.
+  * If the outage event is not similar/related to any existing incidents, then the outage_agent redirects the flow to the search_agent that searches the web for similar outage scenarios. If a match is found, the outage_event creates a new incident ticket with resolution steps identified from the search result.
+  * Finally, the agent sends a notification to the support team with the ticket link and the summary of the outage event.
 
 * **Bill Impact Analysis** - Bill Analyzer Agents identify 'bill shock' scenarios and autonomously forecast the customer's upcoming bill.
   *  When a bill change event occurs, the event handler/subscriber triggers the bill_impact_analyzer agent. This agent consumes the bill event and saves it in the 'state'.
