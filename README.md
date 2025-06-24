@@ -37,13 +37,21 @@
 12. gcloud auth application-default login (update values in .env)
 13. gcloud init (Select project-id)
 
-Run adk web to launch ADK Dev UI
+Run adk web to launch ADK Dev UI (or use ADK CLI)
 
-# BigQuery  Information
+# BigQuery Information
   > Service Account: "dbconnect"
  
   > DataSet: "BillingData"
 
   > Table: "BillingStatement"
   
-  > Data imported in "BillingStatement" 
+  > Data imported in "BillingStatement"
+
+# Cloud Storage Information
+  > Service Account: "dbconnect"
+
+# JIRA (Incident Management System)
+  > Service Account: "dbconnect"
+
+
