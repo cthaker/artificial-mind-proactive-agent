@@ -18,7 +18,7 @@
 
 # Prerequisite
 1. Python312
-2. Checkout repo from git url->https://github.com/cthaker/artificial-mind-proactive-agent.git
+2. Checkout repo from git (https://github.com/cthaker/artificial-mind-proactive-agent.git)
 
 # Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
@@ -39,19 +39,23 @@
 
 Run adk web to launch ADK Dev UI (or use ADK CLI)
 
-# BigQuery Information
-  > Service Account: "dbconnect"
- 
-  > DataSet: "BillingData"
+# Google Cloud Platform Project Information
+  > Project Name: Team Alpha - Innovation
+  > Project ID: hacker2025-team-1-dev
 
-  > Table: "BillingStatement"
+# BigQuery Information
+  > Service Account: dbconnect
+ 
+  > DataSet: BillingData
+
+  > Table: BillingStatement
   
-  > Data imported in "BillingStatement"
+  > Data imported in BillingStatement
 
 # Cloud Storage Information
-  > Service Account: "dbconnect"
+  > Service Account: dbconnect
 
 # JIRA (Incident Management System)
-  > Service Account: "dbconnect"
+  > JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
 
 
