@@ -70,7 +70,11 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
   *  It then analyzes the recent changes in the context of past trends to generate an accurate bill prediction.
   *  Finally, the agent sends an SMS to the customer, summarizing the projected bill amount and highlighting the key factors contributing to the change.
 
-* **Customer Success**
+* **Customer Success** - Customer Success agents analyze recent customer calls, provide insights based on the call transcript/recording and proactively re-engages with the customer for unresolved calls.
+  * A scheduled call analysis job triggers the customer_call_analyzer agent.
+  * It transfers the flow to call_analyzer_agent to analyze a particular recording/transcript/recording, perform sentiment analysis and and generate a summary of the call.
+  * If customer is not satisfied, frustrated, or angry, the agents creates a Jira ticket with the label 'Outbound_Call' for the customer service team so that they can proactively reconnect with the customer.
+  * The past_call_analyzer_agent is invoked to answer user questions regarding historical calls.
 
 
 ## Installation and Setup Guide
