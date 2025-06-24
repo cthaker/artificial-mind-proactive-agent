@@ -112,11 +112,8 @@ _**To be executed on terminal/PowerShell**_
 11. pip3 install --upgrade google-cloud-bigquery  
   
 _**To be executed on google cloud cli**_  
-1. Set API Key (Google Cloud Console > Credentials) in .env file
-2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
-3. 
-12. gcloud auth application-default login  
-13. gcloud init (Select GCP project-id)  
+12. gcloud auth application-default login
+13. gcloud init (Select GCP project-id)
   
 _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
 
