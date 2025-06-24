@@ -4,9 +4,9 @@
 _Presented By:_ **Artifical Minds**__
 
 ## Explore Our Project
-- [Problem Statement](problem_statement)
-- [Our Solution](our_solution)
-- Solution Design
+- [Problem Statement](problem-statement)
+- [Our Solution](our-solution)
+- [Solution Architecture and Technical Components](solution_architecture_and-technical-components)
 - Meet Our Agents
 - Impact and Scalability
 - Execution Plan
@@ -29,7 +29,7 @@ It's key features include:
 * Advise for the Support Engineer with Preliminary Resolution Steps to Expedited Troubleshooting
 * Customer re-engagement via proactive outreach
 
-## Solution Design 
+## Solution Architecture and Technical Components 
 
 
 ### Project Structure
