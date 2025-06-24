@@ -10,8 +10,7 @@ _Presented By:_ **Artifical Minds**__
 - [Solution Architecture and Technical Components](#solution_architecture_and-technical-components)
 - [Meet Our Agents](#meet-our-agents)
 - [Installation and Setup Guide](#installation-and-setup-guide)
-- [Impact and Scalability](#impact-and-scalability)
-- [Execution Plan](#execution-plan)
+- [Impact and Metrics](#impact-and-metrics)
 - [SmartReach's Future Reach](#smartreachs-future-reach)
 
 
@@ -133,7 +132,7 @@ _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
   * JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
 
 
-## Impact and Scalability
+## Impact and Metrics
 ### Impact 
 * Business Impact
   * Cost per Contact: Lowered by reducing inbound volume.
@@ -146,7 +145,8 @@ _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
   * Improved agent utilization by focusing on high-value interactions. 
 
 ### Metrics
-Monitoring the performance and behavior of AI agents is crucial for continuous improvement and auditing. Here are some key metrics and monitoring capabilities available for Vertex AI Agent Engine:
+With Vertex AI Agent Engine, agents can be seamlessly scaled in a managed environment optimized for production readiness. Monitoring the performance and behavior of AI agents is crucial for continuous improvement and auditing. 
+Here are some key metrics and monitoring capabilities available for Vertex AI Agent Engine:
 * **Built-in Metrics via Cloud Monitoring** - Vertex AI Agent Engine automatically collects and visualizes a set of built-in metrics, which help understand the overall health and performance of the agents. These can be viewed using the Metrics Explorer:
   * Request count: the total number of requests served by an agent
   * Error rates: the percentage of requests that resulted in errors
@@ -164,9 +164,7 @@ Monitoring the performance and behavior of AI agents is crucial for continuous i
 * **Dashboards and Reporting** - Google Cloud provides a default dashboard for Vertex AI Agent Engine, often called "Vertex AI Agent Engine Overview," which displays key performance indicators at a glance. Custom dashboards can be built using Cloud Monitoring and integrating with third-party monitoring tools like Datadog.  
 _By leveraging these metrics and monitoring capabilities, oragnizations can ensure that Vertex AI agents are performing optimally, identify and resolve issues quickly, and continuously improve their effectiveness in production._
 
-### Scalability
-* With Vertex AI Agent Engine, agents can be seamlessly scaled in a managed environment optimized for production readiness.
-* SmartReach supports integration with a wide range of CRM systems (e.g., SAP, Salesforce), enabling access to customer records and call transcripts.
-* It can easily connect with diverse Incident Management Systems (like ServiceNow, BMC Helix ITSM) to enhance workflow efficiency.
 
 ## SmartReach's Future Reach
+* SmartReach supports integration with a wide range of CRM systems (e.g., SAP, Salesforce), enabling access to customer records and call transcripts.
+* It can easily connect with diverse Incident Management Systems (like ServiceNow, BMC Helix ITSM) to enhance workflow efficiency.
