@@ -4,9 +4,9 @@ from google.adk.tools.agent_tool import AgentTool
 from twilio.rest import Client
 
 account_sid = 'ACce58d36458dd385cdc2dd739a984d0c4'
-auth_token = ''
+auth_token = '<TWILIO_AUTH_TOKEN>'
 twilio_number = '+18483613765'
-recipient_number = ''
+recipient_number = '<RECIPIENT_PHONE_NUMBER>'
 client = Client(account_sid, auth_token)
 
 def send_sms(message_body: str) -> dict:
@@ -26,7 +26,7 @@ def send_sms(message_body: str) -> dict:
 
 JIRA_URL = "https://cap-artificial-minds.atlassian.net/"
 EMAIL = "sandeep.3028@gmail.com"
-API_TOKEN = ""
+API_TOKEN = "<JIRA_AUTH_TOKEN>"
 
  
  
