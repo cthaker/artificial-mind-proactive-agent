@@ -5,23 +5,25 @@
 ```
 .
 ├── README.md
-├── pyproject.toml
 ├── bill_impact_analyzer/
+│   └── deployment/
 │   └── sub_agents/
 │       ├── bill_predictor/
 │   └── tools/
 ├── customer_call_analyzer/
-├── telecom_agent_main/
+│   └── deployment/
 │   └── sub_agents/
-│       ├── greeting_agent/
+│       ├── call_analyzer/
+│       ├── past_call_analyzer/
+├── outage_event_analyzer/
+│   └── deployment/
+│   └── sub_agents/
 │       ├── outage_agent/
+│       ├── search_agent/
 │   └── tools/
 │   └── deployment/
-├── tests/
-│   └── unit/
-├── eval/
-│   └── data/
-└── deployment/
+├── pyproject.toml
+└── .env.example
 ```
 
 # Prerequisite
