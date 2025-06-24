@@ -3,8 +3,11 @@ name = "artificial-mind-proactive-agent"
 version = "0.1.0"
 description = "This AI Agent helps user with their telecom billing, also it suggests plans according to user's requirement."
 authors = [
-    {name = "Tushar Sabale", email = "tushar.sabale@capgemini.com"}
-    
+    {name = "Tushar Sabale", email = "tushar.sabale@capgemini.com"},
+    {name = "Pritha Lahiri", email = "pritha.lahiri@capgemini.com"},
+    {name = "Chandrak Thaker", email = "chandrak.thaker@capgemini.com"},
+    {name = "Manasa Burgula", email = "manasa.burgula@capgemini.com"},
+    {name = "Swati Bagchi", email = "swati.bagchi@capgemini.com"}
 ]
 readme = "README.md"
 license = "Apache License 2.0"
