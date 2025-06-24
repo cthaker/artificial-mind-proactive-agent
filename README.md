@@ -16,7 +16,7 @@ _Presented By:_ **Artifical Minds**__
 
 ## Problem Statement
 In telecom, customer churn remains a critical concern, directly undermining revenue and growth potential.
-The top factors leading to customer aattrition are:
+The top factors leading to customer attrition are:
 * Inconsistent service reliability
 * Lack of service disruption notifications
 * Unanticipated changes in billing
@@ -29,7 +29,7 @@ Our vision is to prioritize customer-centric initiatives to enhance retention an
 It's key features include:
 * Hyper-Personalized Billing Insight with next bill prediction
 * Proactive notifications for service interruptions/ongoing outages
-* Advise for the Support Engineer with Preliminary Resolution Steps to Expedited Troubleshooting
+* Advise for the Support Engineer with Preliminary Resolution Steps to expedite troubleshooting
 * Customer re-engagement via proactive outreach
 
 
@@ -166,3 +166,7 @@ _By leveraging these metrics and monitoring capabilities, oragnizations can ensu
 ## SmartReach's Future Reach
 * SmartReach supports integration with a wide range of CRM systems (e.g., SAP, Salesforce), enabling access to customer records and call transcripts.
 * It can easily connect with diverse Incident Management Systems (like ServiceNow, BMC Helix ITSM) to enhance workflow efficiency.
+* SmartReach is adaptable across industries, enabling proactive customer engagement and seamless support experiences well beyond telecom.
+
+# SmartReach - Seamless Connections; Lasting Relationships
+    
