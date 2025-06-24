@@ -101,18 +101,18 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
   
 _**To be executed on terminal/PowerShell**_  
-4. pip3 install poetry
-5. cd artificial-mind-proactive-agent
-6. poetry install
-7. python -m venv .venv
-8. .\.venv\Scripts\activate (for MAC-> source $(poetry env info --path)/bin/activate)
-9. pip3 install google-adk
-10. pip3 install twilio
-11. pip3 install jira
-12. pip3 install --upgrade google-cloud-bigquery
+4. pip3 install poetry  
+5. cd artificial-mind-proactive-agent  
+6. poetry install  
+7. python -m venv .venv  
+8. .\.venv\Scripts\activate (for MAC-> source $(poetry env info --path)/bin/activate)  
+9. pip3 install google-adk  
+10. pip3 install twilio  
+11. pip3 install jira  
+12. pip3 install --upgrade google-cloud-bigquery  
   
 _**To be executed on google cloud cli**_  
-13. gcloud auth application-default login 
+13. gcloud auth application-default login  
 14. gcloud init (Select GCP project-id)  
   
 _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
@@ -134,13 +134,13 @@ _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
 
 ## Impact and Metrics
 ### Impact 
-* Business Impact
+* **Business Impact**
   * Cost per Contact: Lowered by reducing inbound volume.
   * Churn Rate: Reduction in customer attrition due to proactive engagement.
-* Customer Experience
+* **Customer Experience**
   * Timely, personalized interaction addressing billing and service issues.
   * Higher satisfaction and trust through transparency and responsiveness.
-* Operational Efficiency
+* **Operational Efficiency**
   * Automated monitoring and outreach, reducing manual workload.
   * Improved agent utilization by focusing on high-value interactions. 
 
