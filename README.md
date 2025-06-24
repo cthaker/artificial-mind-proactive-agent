@@ -61,7 +61,11 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 * **Service Outage/Restoration**
 
 
-* **Bill Impact Analysis**
+* **Bill Impact Analysis** - Bill Analyzer Agents identify 'bill shock' scenarios and autonomously forecast the customer's upcoming bill.
+  *  When a bill change event occurs, the event handler/subscriber triggers the bill_impact_analyzer agent. This agent consumes the bill event and saves it in the 'state'.
+  *  To predict the bill, the flow is then transferred to the bill_predictor sub_agent. It retrieves historical billing data from BigQuery.
+  *  It then analyzes the recent changes in the context of past trends to generate an accurate bill prediction.
+  *  Finally, the agent sends an SMS to the customer, summarizing the projected bill amount and highlighting the key factors contributing to the change.
 
 * **Customer Success**
 
