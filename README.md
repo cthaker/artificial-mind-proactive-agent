@@ -7,11 +7,11 @@ _Presented By:_ **Artifical Minds**__
 - [Problem Statement](#problem-statement)
 - [Our Solution](#our-solution)
 - [Solution Architecture and Technical Components](#solution_architecture_and-technical-components)
-- Meet Our Agents
-- Installation and Setup Guide
-- Impact and Scalability
-- Execution Plan
-- SmartReach's Future Reach
+- [Meet Our Agents](#meet-our-agents)
+- [Installation and Setup Guide](#installation-and-setup-guide)
+- [Impact and Scalability](#impact-and-scalability)
+- [Execution Plan](#execution-plan)
+- [SmartReach's Future Reach](#smartreachs-future-reach)
 
 ## Problem Statement
 In telecom, customer churn remains a critical concern, directly undermining revenue and growth potential.
@@ -31,11 +31,34 @@ It's key features include:
 * Customer re-engagement via proactive outreach
 
 ## Solution Architecture and Technical Components 
+![ProactiveReachOutAgents-Overall_Architecture](https://github.com/user-attachments/assets/19c368df-ac10-43f0-8488-eff7cbab45ed)  
+
+### Technical Components
+* **Google Cloud Platform** – Cloud services used in the solution:
+** Vertex AI Agent Engine – Provides fully managed, serverless runtime used for deploying and scaling AI agents
+** AI Agents – Each AI agent is designed to pursue its own goals and complete tasks through reasoning, planning, and a level of autonomy; uses ** Gemini-2.0-flash model
+** BigQuery – Serverless, enterprise data warehouse used to store customer billing history
+** Cloud Storage – Used to store customer call transcripts
+** Pub/Sub - Publish/Subscribe messaging service used to receive events from in-house/external systems 
+
+* **Enterprise Systems** - Entrprise Systems may be on-prem or on the cloud:
+** Network Performance Monitoring System – publishes outage events
+** Billing and Usage System – publishes usage and bill change events
+** Customer Call Log Analyzer Job – Scheduled job to trigger call log analysis
+
+* **3rd Party Tools**
+** OSS Ticketing System (JIRA) - Service Outage ticketing system for Engineers
+** Twilio - Programmable tool used to send out communications
+
+
+
+
+
 
 ## Meet Our Agents
 
 ## Installation and Setup Guide
-## Project Structure
+### Project Structure
 ```
 .
 ├── README.md
@@ -60,14 +83,14 @@ It's key features include:
 └── .env.example
 ```
 
-## Prerequisite
+### Prerequisite
 1. Python312
 2. Checkout repo from git (https://github.com/cthaker/artificial-mind-proactive-agent.git)
 
-## Installation steps
+### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
 2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
-### To be executed on terminal/PowerShell
+**To be executed on terminal/PowerShell**
 3. pip3 install poetry
 4. cd artificial-mind-proactive-agent
 5. poetry install
@@ -77,16 +100,16 @@ It's key features include:
 9. pip3 install twilio
 10. pip3 install jira
 11. pip3 install --upgrade google-cloud-bigquery
-### To be executed on google cloud cli
+**To be executed on google cloud cli**
 12. gcloud auth application-default login 
 13. gcloud init (Select GCP project-id)
 
-Run adk web to launch ADK Dev UI (or use ADK CLI)
+**Run adk web to launch ADK Dev UI (or use ADK CLI)**
 
-## Google Cloud Platform Project Information
+### Google Cloud Platform Project Information
   > Project Name: Team Alpha - Innovation
 
-## BigQuery Information
+### BigQuery Information
   > Service Account: dbconnect
  
   > DataSet: BillingData
@@ -95,7 +118,7 @@ Run adk web to launch ADK Dev UI (or use ADK CLI)
   
   > Data imported in BillingStatement
 
-## Cloud Storage Information
+### Cloud Storage Information
   > Created as a Data Store under AI Applications
 
   > Name: Call Transcripts
@@ -103,7 +126,7 @@ Run adk web to launch ADK Dev UI (or use ADK CLI)
   > Type: Unstructured data
 
 
-## JIRA (Incident Management System)
+### JIRA (Incident Management System)
   > JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
 
 
