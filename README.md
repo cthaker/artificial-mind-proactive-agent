@@ -98,7 +98,7 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
    
 ### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
-2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account 
+2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account  
 _**To be executed on terminal/PowerShell**_  
 4. pip3 install poetry  
 5. cd artificial-mind-proactive-agent  
@@ -109,8 +109,9 @@ _**To be executed on terminal/PowerShell**_
 10. pip3 install twilio  
 11. pip3 install jira  
 12. pip3 install --upgrade google-cloud-bigquery  
-13. gcloud auth application-default login
-14. gcloud init (Select GCP project-id)
+_**To be executed on google cloud cli**_    
+14. gcloud auth application-default login
+15. gcloud init (Select GCP project-id)
   
 _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
 
