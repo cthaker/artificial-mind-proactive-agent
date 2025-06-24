@@ -1,5 +1,5 @@
 [project]
-name = "agent-main"
+name = "artificial-mind-proactive-agent"
 version = "0.1.0"
 description = "This AI Agent helps user with their telecom billing, also it suggests plans according to user's requirement."
 authors = [

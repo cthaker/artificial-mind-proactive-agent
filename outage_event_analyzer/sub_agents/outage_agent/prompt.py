@@ -1,27 +1,4 @@
-from google.adk.agents import Agent
-from google.adk.tools.agent_tool import AgentTool
-from google.adk.tools import google_search
-from .tools import read_all_tickets, create_new_ticket, send_sms
-
-search_agent = Agent(
-    name="search_agent",
-    model="gemini-2.0-flash",
-    description="A bot that performs web searches",
-    instruction="""
-    You can use the google_search tool to find information on the web.
-    Use this tool when you need to answer questions that require up-to-date information or general knowledge.
-    """,
-    tools=[google_search],
-)
-
-search_tool = AgentTool(search_agent)
-
-
-outage_agent = Agent(
-    name='outage_agent',
-    description="A bot that handles telecom outages",
-    model="gemini-2.0-flash",
-    instruction="""
+INSTRUCTIONS = """
     You are a helpful assistant that takes outage event as input.
     Use the below tool to read the outage events from the JIRA project without asking any additional details.
     - read_all_tickets
@@ -41,6 +18,4 @@ outage_agent = Agent(
     Share the ticket link with the user and suggest the user to update the ticket with any additional information if required.
     send notification to the support team with the ticket link and the summary of the outage event.
     - send_sms
-    """,
-    tools=[read_all_tickets, create_new_ticket, search_tool, send_sms],
-)
+    """
