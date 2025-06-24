@@ -2,16 +2,35 @@
 ![SmartReach](https://github.com/user-attachments/assets/54118c0a-7426-4e8f-9d5d-005126ce7158)
 
 _Presented By:_ **Artifical Minds**__
-![TeamImage](https://github.com/user-attachments/assets/a1856e6e-752f-4ff9-8ca3-4432a22b3997)
 
 ## Explore Our Project
-- Problem Statement
-- Our Solution
-- Solution Architecture
+- [Problem Statement](problem_statement)
+- [Our Solution](our_solution)
+- Solution Design
 - Meet Our Agents
 - Impact and Scalability
 - Execution Plan
 - SmartReach's Future Reach
+
+## Problem Statement
+In telecom, customer churn remains a critical concern, directly undermining revenue and growth potential.
+The top factors leading to customer aattrition are:
+* Inconsistent service reliability
+* Lack of service disruption notifications
+* Unanticipated changes in billing
+* Unaddressed customer queries
+
+## Our Solution
+Our vision is to prioritize customer-centric initiatives to enhance retention and drive loyalty, provide initial troubleshooting framework for support engineers, and optimize support operations. 
+**SmartReach** is an Agentic AI powered proactive outreach system for the Telecom industry that helps anticipate and address customer needs before they arise!
+It's key features include:
+* Hyper-Personalized Billing Insight with next bill prediction
+* Proactive notifications for service interruptions/ongoing outages
+* Advise for the Support Engineer with Preliminary Resolution Steps to Expedited Troubleshooting
+* Customer re-engagement via proactive outreach
+
+## Solution Design 
+
 
 ### Project Structure
 ```
