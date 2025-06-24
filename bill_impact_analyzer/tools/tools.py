@@ -10,9 +10,9 @@ from google.cloud import bigquery
 
 # Twilio configuration
 account_sid = 'ACce58d36458dd385cdc2dd739a984d0c4'
-auth_token = ''
+auth_token = '<TWILIO_AUTH_TOKEN>'
 twilio_number = '+18483613765'
-recipient_number = ''
+recipient_number = '<RECIPIENT_PHONE_NUMBER>'
 client = Client(account_sid, auth_token)
 
 # BigQuery configuration
