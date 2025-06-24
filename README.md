@@ -100,7 +100,7 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 ### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
 2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account  
-**To be executed on terminal/PowerShell**  
+_**To be executed on terminal/PowerShell**  _
 3. pip3 install poetry
 4. cd artificial-mind-proactive-agent
 5. poetry install
@@ -110,34 +110,23 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 9. pip3 install twilio
 10. pip3 install jira
 11. pip3 install --upgrade google-cloud-bigquery  
-**To be executed on google cloud cli**  
+_**To be executed on google cloud cli**  _
 12. gcloud auth application-default login 
 13. gcloud init (Select GCP project-id)  
 
-**Run adk web to launch ADK Dev UI (or use ADK CLI)**  
+_**Run adk web to launch ADK Dev UI (or use ADK CLI)**  _
 
-### Google Cloud Platform Project Information
-  > Project Name: Team Alpha - Innovation
-
-### BigQuery Information
-  > Service Account: dbconnect
- 
-  > DataSet: BillingData
-
-  > Table: BillingStatement
-  
-  > Data imported in BillingStatement
-
-### Cloud Storage Information
-  > Created as a Data Store under AI Applications
-
-  > Name: Call Transcripts
-
-  > Type: Unstructured data
-
-
-### JIRA (Incident Management System)
-  > JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
+### Google Cloud Platform Features
+* GCP Project Name: Team Alpha - Innovation  
+* **BigQuery** 
+  * Service Account: dbconnect
+  * DataSet: BillingData
+  * Table: BillingStatement  
+* **Cloud Storage** - _created as a Data Store under AI Applications_
+  * Name: Call Transcripts
+  * Type: Unstructured data
+* **JIRA** _(Incident Management System)_
+  * JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
 
 
 ## Impact and Scalability
