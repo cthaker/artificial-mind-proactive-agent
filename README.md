@@ -101,10 +101,7 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
   
 _**To be executed on terminal/PowerShell**_  
-1. Set API Key (Google Cloud Console > Credentials) in .env file
-2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
 3. pip3 install poetry  
-
 4. cd artificial-mind-proactive-agent  
 5. poetry install  
 6. python -m venv .venv  
@@ -115,6 +112,9 @@ _**To be executed on terminal/PowerShell**_
 11. pip3 install --upgrade google-cloud-bigquery  
   
 _**To be executed on google cloud cli**_  
+1. Set API Key (Google Cloud Console > Credentials) in .env file
+2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
+3. 
 12. gcloud auth application-default login  
 13. gcloud init (Select GCP project-id)  
   
