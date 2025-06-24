@@ -1,4 +1,5 @@
 # SmartReach - an Agentic AI-driven Proactive Telecom Outreach
+![SmartReach](https://github.com/user-attachments/assets/54118c0a-7426-4e8f-9d5d-005126ce7158)
 
 
 ### Project Structure
