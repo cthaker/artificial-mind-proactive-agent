@@ -37,7 +37,6 @@ It's key features include:
 ## Solution Architecture and Technical Components 
 ![ProactiveReachOutAgents-Overall_Architecture](https://github.com/user-attachments/assets/19c368df-ac10-43f0-8488-eff7cbab45ed)  
 
-
 ### Technical Components
 * **Google Cloud Platform** – Cloud services used in the solution:
   * Vertex AI Agent Engine – Provides fully managed, serverless runtime used for deploying and scaling AI agents
@@ -58,8 +57,14 @@ It's key features include:
 
 ## Meet Our Agents
 ![ProactiveReachOutAgents-Agent_Design](https://github.com/user-attachments/assets/80ade3dd-d241-48d3-a458-92403119e63b)
+To support SmartReach’s diverse feature set, the solution deploys three dedicated agent groups, each focused on a specific functional domain. 
+
+* **Service Outage/Restoration**
 
 
+* **Bill Impact Analysis**
+
+* **Customer Success**
 
 
 ## Installation and Setup Guide
