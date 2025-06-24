@@ -96,11 +96,11 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 ### Prerequisite
 1. Python312
 2. Checkout repo from git (https://github.com/cthaker/artificial-mind-proactive-agent.git)
-
+   
 ### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
-2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
-**To be executed on terminal/PowerShell**
+2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account  
+**To be executed on terminal/PowerShell**  
 3. pip3 install poetry
 4. cd artificial-mind-proactive-agent
 5. poetry install
@@ -109,12 +109,12 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 8. pip3 install google-adk
 9. pip3 install twilio
 10. pip3 install jira
-11. pip3 install --upgrade google-cloud-bigquery
-**To be executed on google cloud cli**
+11. pip3 install --upgrade google-cloud-bigquery  
+**To be executed on google cloud cli**  
 12. gcloud auth application-default login 
-13. gcloud init (Select GCP project-id)
+13. gcloud init (Select GCP project-id)  
 
-**Run adk web to launch ADK Dev UI (or use ADK CLI)**
+**Run adk web to launch ADK Dev UI (or use ADK CLI)**  
 
 ### Google Cloud Platform Project Information
   > Project Name: Team Alpha - Innovation
