@@ -50,8 +50,6 @@ Run adk web to launch ADK Dev UI (or use ADK CLI)
 # Google Cloud Platform Project Information
   > Project Name: Team Alpha - Innovation
 
-  > Project ID: hacker2025-team-1-dev
-
 # BigQuery Information
   > Service Account: dbconnect
  
