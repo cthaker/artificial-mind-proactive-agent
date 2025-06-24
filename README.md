@@ -3,6 +3,7 @@
 
 _Presented By:_ **Artifical Minds**__
 
+
 ## Explore Our Project
 - [Problem Statement](#problem-statement)
 - [Our Solution](#our-solution)
@@ -13,6 +14,7 @@ _Presented By:_ **Artifical Minds**__
 - [Execution Plan](#execution-plan)
 - [SmartReach's Future Reach](#smartreachs-future-reach)
 
+
 ## Problem Statement
 In telecom, customer churn remains a critical concern, directly undermining revenue and growth potential.
 The top factors leading to customer aattrition are:
@@ -20,6 +22,7 @@ The top factors leading to customer aattrition are:
 * Lack of service disruption notifications
 * Unanticipated changes in billing
 * Unaddressed customer queries
+
 
 ## Our Solution
 Our vision is to prioritize customer-centric initiatives to enhance retention and drive loyalty, provide initial troubleshooting framework for support engineers, and optimize support operations. 
@@ -30,32 +33,34 @@ It's key features include:
 * Advise for the Support Engineer with Preliminary Resolution Steps to Expedited Troubleshooting
 * Customer re-engagement via proactive outreach
 
+
 ## Solution Architecture and Technical Components 
 ![ProactiveReachOutAgents-Overall_Architecture](https://github.com/user-attachments/assets/19c368df-ac10-43f0-8488-eff7cbab45ed)  
+
 
 ### Technical Components
 * **Google Cloud Platform** – Cloud services used in the solution:
   * Vertex AI Agent Engine – Provides fully managed, serverless runtime used for deploying and scaling AI agents
-  * AI Agents – Each AI agent is designed to pursue its own goals and complete tasks through reasoning, planning, and a level of autonomy; uses   * Gemini-2.0-flash model
+  * AI Agents – Each AI agent is designed to pursue its own goals and complete tasks through reasoning, planning, and a level of autonomy
   * BigQuery – Serverless, enterprise data warehouse used to store customer billing history
   * Cloud Storage – Used to store customer call transcripts
   * Pub/Sub - Publish/Subscribe messaging service used to receive events from in-house/external systems 
 
 * **Enterprise Systems** - Entrprise Systems may be on-prem or on the cloud:
-** Network Performance Monitoring System – publishes outage events
-** Billing and Usage System – publishes usage and bill change events
-** Customer Call Log Analyzer Job – Scheduled job to trigger call log analysis
+  * Network Performance Monitoring System – publishes outage events
+  * Billing and Usage System – publishes usage and bill change events
+  * Customer Call Log Analyzer Job – Scheduled job to trigger call log analysis
 
 * **3rd Party Tools**
-** OSS Ticketing System (JIRA) - Service Outage ticketing system for Engineers
-** Twilio - Programmable tool used to send out communications
-
-
-
-
+  * OSS Ticketing System (JIRA) - Service Outage ticketing system for Engineers
+  * Twilio - Programmable tool used to send out communications
 
 
 ## Meet Our Agents
+![ProactiveReachOutAgents-Agent_Design](https://github.com/user-attachments/assets/80ade3dd-d241-48d3-a458-92403119e63b)
+
+
+
 
 ## Installation and Setup Guide
 ### Project Structure
