@@ -6,9 +6,17 @@
 .
 ├── README.md
 ├── pyproject.toml
+├── bill_impact_analyzer/
+│   └── sub_agents/
+│       ├── bill_predictor/
+│   └── tools/
+├── customer_call_analyzer/
 ├── telecom_agent_main/
 │   └── sub_agents/
 │       ├── greeting_agent/
+│       ├── outage_agent/
+│   └── tools/
+│   └── deployment/
 ├── tests/
 │   └── unit/
 ├── eval/
