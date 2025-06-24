@@ -55,7 +55,7 @@ It's key features include:
 
 
 ## Meet Our Agents
-![ProactiveReachOutAgents-Agent_Design](https://github.com/user-attachments/assets/80ade3dd-d241-48d3-a458-92403119e63b)
+![ProactiveReachOutAgents-Agent_Design](https://github.com/user-attachments/assets/f1da0f92-397f-4291-b780-68c87bdc4c51)
 To support SmartReach’s diverse feature set, the solution deploys three dedicated agent groups, each focused on a specific functional domain. 
 
 * **Service Outage/Restoration**
