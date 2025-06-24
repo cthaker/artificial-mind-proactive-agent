@@ -168,5 +168,5 @@ _By leveraging these metrics and monitoring capabilities, oragnizations can ensu
 * It can easily connect with diverse Incident Management Systems (like ServiceNow, BMC Helix ITSM) to enhance workflow efficiency.
 * SmartReach is adaptable across industries, enabling proactive customer engagement and seamless support experiences well beyond telecom.
 
-# SmartReach - Seamless Connections; Lasting Relationships
+**SmartReach** - _Seamless Connections; Lasting Relationships_
     
