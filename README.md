@@ -101,7 +101,10 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
   
 _**To be executed on terminal/PowerShell**_  
+1. Set API Key (Google Cloud Console > Credentials) in .env file
+2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
 3. pip3 install poetry  
+
 4. cd artificial-mind-proactive-agent  
 5. poetry install  
 6. python -m venv .venv  
