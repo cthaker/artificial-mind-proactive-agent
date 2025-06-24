@@ -35,11 +35,11 @@ It's key features include:
 
 ### Technical Components
 * **Google Cloud Platform** – Cloud services used in the solution:
-** Vertex AI Agent Engine – Provides fully managed, serverless runtime used for deploying and scaling AI agents
-** AI Agents – Each AI agent is designed to pursue its own goals and complete tasks through reasoning, planning, and a level of autonomy; uses ** Gemini-2.0-flash model
-** BigQuery – Serverless, enterprise data warehouse used to store customer billing history
-** Cloud Storage – Used to store customer call transcripts
-** Pub/Sub - Publish/Subscribe messaging service used to receive events from in-house/external systems 
+  * Vertex AI Agent Engine – Provides fully managed, serverless runtime used for deploying and scaling AI agents
+  * AI Agents – Each AI agent is designed to pursue its own goals and complete tasks through reasoning, planning, and a level of autonomy; uses   * Gemini-2.0-flash model
+  * BigQuery – Serverless, enterprise data warehouse used to store customer billing history
+  * Cloud Storage – Used to store customer call transcripts
+  * Pub/Sub - Publish/Subscribe messaging service used to receive events from in-house/external systems 
 
 * **Enterprise Systems** - Entrprise Systems may be on-prem or on the cloud:
 ** Network Performance Monitoring System – publishes outage events
