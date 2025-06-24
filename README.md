@@ -34,13 +34,14 @@
 10. pip3 install jira
 11. pip3 install --upgrade google-cloud-bigquery
 # To be executed on google cloud cli
-12. gcloud auth application-default login (update values in .env)
-13. gcloud init (Select project-id)
+12. gcloud auth application-default login 
+13. gcloud init (Select GCP project-id)
 
 Run adk web to launch ADK Dev UI (or use ADK CLI)
 
 # Google Cloud Platform Project Information
   > Project Name: Team Alpha - Innovation
+
   > Project ID: hacker2025-team-1-dev
 
 # BigQuery Information
@@ -53,7 +54,12 @@ Run adk web to launch ADK Dev UI (or use ADK CLI)
   > Data imported in BillingStatement
 
 # Cloud Storage Information
-  > Service Account: dbconnect
+  > Created as a Data Store under AI Applications
+
+  > Name: Call Transcripts
+
+  > Type: Unstructured data
+
 
 # JIRA (Incident Management System)
   > JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
