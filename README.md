@@ -99,21 +99,23 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
    
 ### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
-2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account  
+2. Add Python Scripts directory (e.g. 'C:\Program Files\Python312\Scripts') to PATH environment variable for your account
+  
 _**To be executed on terminal/PowerShell**_
-3. pip3 install poetry
-4. cd artificial-mind-proactive-agent
-5. poetry install
-6. python -m venv .venv
-7. .\.venv\Scripts\activate (for MAC-> source $(poetry env info --path)/bin/activate)
-8. pip3 install google-adk
-9. pip3 install twilio
-10. pip3 install jira
-11. pip3 install --upgrade google-cloud-bigquery  
+4. pip3 install poetry
+5. cd artificial-mind-proactive-agent
+6. poetry install
+7. python -m venv .venv
+8. .\.venv\Scripts\activate (for MAC-> source $(poetry env info --path)/bin/activate)
+9. pip3 install google-adk
+10. pip3 install twilio
+11. pip3 install jira
+12. pip3 install --upgrade google-cloud-bigquery
+  
 _**To be executed on google cloud cli**_
-12. gcloud auth application-default login 
-13. gcloud init (Select GCP project-id)  
-
+13. gcloud auth application-default login 
+14. gcloud init (Select GCP project-id)  
+  
 _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
 
 ### Google Cloud Platform Features
@@ -125,7 +127,7 @@ _**Run adk web to launch ADK Dev UI (or use ADK CLI)**_
 * **Cloud Storage** - _created as a Data Store under AI Applications_
   * Name: Call Transcripts
   * Type: Unstructured data
-  * 
+
 ### 3rd Party Tools
 * **JIRA** _(Incident Management System)_
   * JIRA Project: https://cap-artificial-minds.atlassian.net/jira/software/projects/KAN/boards/1
