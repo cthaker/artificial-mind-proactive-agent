@@ -1,4 +1,4 @@
-# Telecom Agent
+# SmartReach - an Agentic AI-driven Proactive Telecom Outreach
 
 
 ### Project Structure
