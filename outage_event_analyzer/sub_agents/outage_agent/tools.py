@@ -3,7 +3,7 @@ from google.adk.tools import google_search
 from google.adk.tools.agent_tool import AgentTool
 from twilio.rest import Client
 
-account_sid = 'ACce58d36458dd385cdc2dd739a984d0c4'
+account_sid = '<TWILIO_SID>'
 auth_token = '<TWILIO_AUTH_TOKEN>'
 twilio_number = '+18483613765'
 recipient_number = '<RECIPIENT_PHONE_NUMBER>'
