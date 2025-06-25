@@ -107,9 +107,10 @@ To support SmartReach’s diverse feature set, the solution deploys three dedica
 1. Python312
 2. Checkout repo from git (https://github.com/cthaker/artificial-mind-proactive-agent.git)
 3. Replace the following placeholders with appropriate values:  
-   i. <TWILIO_AUTH_TOKEN>  
-   ii. <RECIPIENT_PHONE_NUMBER>  
-   iii. <JIRA_AUTH_TOKEN>  
+   i. <TWILIO_SID>  
+   ii. <TWILIO_AUTH_TOKEN>  
+   iii. <RECIPIENT_PHONE_NUMBER>  
+   iv. <JIRA_AUTH_TOKEN>  
    
 ### Installation steps
 1. Set API Key (Google Cloud Console > Credentials) in .env file
